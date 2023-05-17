@@ -1,0 +1,8 @@
+.cars-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: rgb(223, 217, 217);
+  min-height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+}
