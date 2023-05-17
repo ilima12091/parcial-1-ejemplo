@@ -6,7 +6,11 @@
 }
 
 .car-card:hover {
-  transform: scale(1.01);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.car-card:hover .car-image {
+  transform: scale(1.05) rotate(1deg);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -14,6 +18,7 @@
   height: 250px;
   width: 100%;
   object-fit: cover;
+  transition: 0.5s;
 }
 
 .car-card-body {
