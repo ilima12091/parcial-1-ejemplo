@@ -1,8 +1,10 @@
-<div class="car-card">
-  <img class="car-image" [src]="car.imageUrl" [alt]="car.model" />
-  <div class="car-card-body">
-    <h2>{{ car.model }}</h2>
-    <p>{{ car.description }}</p>
-    <p>{{ car.type }}</p>
+<a [routerLink]="'/cars/' + car.id">
+  <div class="car-card">
+    <img class="car-image" [src]="car.imageUrl" [alt]="car.model" />
+    <div class="car-card-body">
+      <h2>{{ car.model }}</h2>
+      <p>{{ car.description }}</p>
+      <p>{{ car.type }}</p>
+    </div>
   </div>
-</div>
+</a>
